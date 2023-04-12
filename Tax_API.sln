@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tax_Api.Model", "Tax_API.Model\Tax_Api.Model.csproj", "{214EC7DA-13F5-4B42-B163-2AD52C1BBE32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tax_Api.Bussines", "Tax_Api.Bussines\Tax_Api.Bussines.csproj", "{3848F319-B93E-4C05-9726-163FE48D0E63}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{214EC7DA-13F5-4B42-B163-2AD52C1BBE32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{214EC7DA-13F5-4B42-B163-2AD52C1BBE32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{214EC7DA-13F5-4B42-B163-2AD52C1BBE32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{214EC7DA-13F5-4B42-B163-2AD52C1BBE32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3848F319-B93E-4C05-9726-163FE48D0E63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3848F319-B93E-4C05-9726-163FE48D0E63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3848F319-B93E-4C05-9726-163FE48D0E63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3848F319-B93E-4C05-9726-163FE48D0E63}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5BBBD473-4954-4D32-9C10-866970C99A0D}
+	EndGlobalSection
+EndGlobal
