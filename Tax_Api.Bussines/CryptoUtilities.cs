@@ -16,7 +16,7 @@ using System.IO;
 
 namespace Tax_Api.Bussines
 {
-    internal class CryptoUtilities
+    public class CryptoUtilities
     {
         public static byte[] StringToByteArray(string hex)
         {

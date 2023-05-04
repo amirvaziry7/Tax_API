@@ -1,5 +1,11 @@
 ﻿namespace Tax_Api.Model.Entities
 {
+    public class Invoice
+    {
+        public InvoiceHeader InvoiceHeader { get; set; }
+        public List<InvoiceBody> InvoiceBodies { get; set; }
+        public InvoicePayment invoicePayment { get; set; }
+    }
     public class InvoiceBody
     {
         public int sstid { get; set; }

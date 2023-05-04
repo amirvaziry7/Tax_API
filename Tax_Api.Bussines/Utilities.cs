@@ -56,12 +56,18 @@ privateKey)
                 val[i] = (byte)(left[i] ^ right[i]);
             return val;
         }
+        /// <summary>
+        /// one Time This Method Should CallTime Secret Key
+        /// </summary>
+        /// <param name="stringToBeEncrypted"></param>
+        /// <param name="publicKey"></param>
+        /// <returns></returns>
         public static string EncryptData(String stringToBeEncrypted, string
 publicKey)
         {
             try
             {
-                //var pem = "-----BEGIN PUBLIC KEY-----\n" + publicKey + "\n-----END PUBLIC KEY-----"; // Add header and footer
+                var pem = "-----BEGIN PUBLIC KEY-----\n" + publicKey + "\n-----END PUBLIC KEY-----"; // Add header and footer
                 AsymmetricKeyParameter asymmetricKeyParameter =
     PublicKeyFactory.CreateKey(Convert.FromBase64String(publicKey));
                 RsaKeyParameters rsaKeyParameters =
@@ -89,6 +95,16 @@ publicKey)
             catch (Exception e)
             {
                 return "error";
+            }
+        }
+
+        public static byte[] GenerateRandomByteArray(int size)
+        {
+            using (RandomNumberGenerator rng = RandomNumberGenerator.Create())
+            {
+                byte[] buffer = new byte[size];
+                rng.GetBytes(buffer);
+                return buffer;
             }
         }
 

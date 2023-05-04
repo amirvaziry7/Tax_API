@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="newtonsoft.json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tax_Api.Bussines\Tax_Api.Bussines.csproj" />
+    <ProjectReference Include="..\Tax_Api.Common\Tax_Api.Common.csproj" />
+    <ProjectReference Include="..\Tax_API.Model\Tax_Api.Model.csproj" />
+  </ItemGroup>
+	<ItemGroup>
+		<Using Include="Tax_Api.Model.Entities" />
+		<Using Include="Tax_Api.Common" />
+	</ItemGroup>
+</Project>

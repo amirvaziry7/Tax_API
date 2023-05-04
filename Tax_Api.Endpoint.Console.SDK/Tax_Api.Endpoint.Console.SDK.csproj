@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="TaxCollectData.Library" Version="0.0.12" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tax_Api.Common\Tax_Api.Common.csproj" />
+    <ProjectReference Include="..\Tax_API.Model\Tax_Api.Model.csproj" />
+  </ItemGroup>
+
+</Project>

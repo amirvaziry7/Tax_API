@@ -6,11 +6,11 @@
         /// <summary>
         /// TimeStamp
         /// </summary>
-        public int indatim { get; set; }
+        public long indatim { get; set; }
         /// <summary>
         /// TimeStamp
         /// </summary>
-        public int indati2m { get; set; }
+        public long indati2m { get; set; }
         public int inty { get; set; }
         public string inno { get; set; }
         public string irtaxid { get; set; }
